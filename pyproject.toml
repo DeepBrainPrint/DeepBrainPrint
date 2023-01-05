@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "deepbrainprint"
+version = "0.0.0"
+authors = []
+description = "DeepBrainPrint: Identifying Individuals Exploiting a Semi-Self-Supervised Contrastive Framework Trained for Structural MRIs"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy",
+    "pandas",
+    "torch",
+    "torchvision",
+    "pytorch_metric_learning",
+    "monai",      
+    "scikit-learn",
+    "scikit-image",
+    "tensorboard",
+    "tqdm",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/DeepBrainPrint/DeepBrainPrint"
+"Bug Tracker" = "https://github.com/DeepBrainPrint/DeepBrainPrint/issues"
+
+[options]
+package_dir = "src"
+
+[options.packages.find]
+where="src"
